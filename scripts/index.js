@@ -11,8 +11,16 @@ $(function() {
     $(this).toggleClass('current')
   })
 })
+function dropdown500(val){
+  var y = document.getElementsByClassName('dropdown500');
+  var aNode = y[0].innerHTML=val;
+}
 
 
+function dropdownhed(val){
+  var y = document.getElementsByClassName('header__dropdown__button1');
+  var aNode = y[0].innerHTML=val;
+}
 function dropdown(val){
   var y = document.getElementsByClassName('yourdrop');
   var aNode = y[0].innerHTML=val;

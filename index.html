@@ -17,9 +17,9 @@
             <div class="dropdown header__dropdown">
               <button class="dropdown-toggle header__dropdown__button header__dropdown__button1" type="button" data-toggle="dropdown" value="Fast">Выберите действие<span class="caret"></span></button>
               <ul class="dropdown-menu" value="Fast">
-                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по номеру по заголовку страницы</li>
-                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по урлу</li>
-                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по заголовку страницы</li>
+                <li class="dropdown-item" onclick="dropdownhed(this.innerHTML);">Сортировать по номеру по заголовку страницы</li>
+                <li class="dropdown-item" onclick="dropdownhed(this.innerHTML);">Сортировать по урлу</li>
+                <li class="dropdown-item" onclick="dropdownhed(this.innerHTML);">Сортировать по заголовку страницы</li>
               </ul>
               <button class="header__btn">Выполнить</button>
             </div>
@@ -73,8 +73,8 @@
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown(this.innerHTML);">Выбрать раздел</li>
-                  <li onclick="dropdown(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Выбрать раздел</li>
+                  <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="seo-meta__body__item__child"> 
@@ -99,15 +99,15 @@
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop1 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown1(this.innerHTML);">Выбрать раздел</li>
-                  <li onclick="dropdown1(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown1(this.innerHTML);">Выбрать раздел</li>
+                  <li class="dropdown-item" onclick="dropdown1(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop2 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать подраздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown2(this.innerHTML);">Выбрать подраздел</li>
-                  <li onclick="dropdown2(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown2(this.innerHTML);">Выбрать подраздел</li>
+                  <li class="dropdown-item" onclick="dropdown2(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="seo-meta__body__item__child"> 
@@ -142,8 +142,8 @@
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop3 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown3(this.innerHTML);">Выбрать раздел</li>
-                  <li onclick="dropdown3(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown3(this.innerHTML);">Выбрать раздел</li>
+                  <li class="dropdown-item" onclick="dropdown3(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="seo-meta__body__item__child"> 
@@ -163,15 +163,15 @@
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop4 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown4(this.innerHTML);">Выбрать раздел</li>
-                  <li onclick="dropdown4(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown4(this.innerHTML);">Выбрать раздел</li>
+                  <li class="dropdown-item" onclick="dropdown4(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="dropdown row__dropdown">
                 <button class="dropdown-toggle yourdrop5 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать подраздел<span class="caret"></span></button>
                 <ul class="dropdown-menu" value="Fast">
-                  <li onclick="dropdown5(this.innerHTML);">Выбрать подраздел</li>
-                  <li onclick="dropdown5(this.innerHTML);">Accurate</li>
+                  <li class="dropdown-item" onclick="dropdown5(this.innerHTML);">Выбрать подраздел</li>
+                  <li class="dropdown-item" onclick="dropdown5(this.innerHTML);">Accurate</li>
                 </ul>
               </div>
               <div class="seo-meta__body__item__child"> 
@@ -218,8 +218,12 @@
                         <path d="M9.6015 8.49636L4.83878 1.81909C4.42514 1.25182 3.77514 0.909088 3.07787 0.909088C1.31696 0.909088 0.288776 2.89454 1.31696 4.32454L4.77969 9.18182L1.31696 14.0391C0.288776 15.4691 1.31696 17.4545 3.07787 17.4545C3.77514 17.4545 4.43696 17.1118 4.83878 16.5445L9.61332 9.86727C9.89696 9.45363 9.89696 8.91 9.6015 8.49636Z"></path>
                       </svg>
                     </button>
-                    <div class="dropdown pagination__dropdown"><a class="dropdown-toggle pagination__dropdown__button" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">Показать по 10  </a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Показать по 20</a><a class="dropdown-item" href="#">Показать по 30</a><a class="dropdown-item" href="#">Показать по 40</a></div>
+                    <div class="dropdown pagination__dropdown"><a class="dropdown500 dropdown-toggle pagination__dropdown__button" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Показать по 10" id="dropdownMenuLink">Показать по 10  <span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" value="Показать по 10">
+                        <li class="dropdown-item" onclick="dropdown500(this.innerHTML);" href="#">Показать по 10</li>
+                        <li class="dropdown-item" onclick="dropdown500(this.innerHTML);" href="#">Показать по 20</li>
+                        <li class="dropdown-item" onclick="dropdown500(this.innerHTML);" href="#">Показать по 30</li>
+                      </ul>
                     </div>
                   </div>
                   <div class="pagination__right"> 

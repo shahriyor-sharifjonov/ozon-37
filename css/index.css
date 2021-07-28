@@ -694,7 +694,7 @@ body {
 }
 
 .dropdown-item {
-  color: #B4B4B4;
+  color: #494A49;
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
   cursor: pointer;
@@ -811,10 +811,10 @@ body {
   border-radius: 6px;
   height: 38px;
   padding: 0 16px;
-  color: #9F9F9F;
+  color: #494A49;
 }
 .pagination__dropdown__button:hover {
-  color: #9F9F9F;
+  color: #494A49;
   text-decoration: none;
 }
 
