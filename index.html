@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="row main" id="main">
+      <div class="col-12 col-xl-9"> 
+        <div class="ozon">
+          <div class="ozon__row ozon__row-with-btns"> 
+            <div class="dropdown header__dropdown">
+              <button class="dropdown-toggle header__dropdown__button header__dropdown__button1" type="button" data-toggle="dropdown" value="Fast">Выберите действие<span class="caret"></span></button>
+              <ul class="dropdown-menu" value="Fast">
+                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по номеру по заголовку страницы</li>
+                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по урлу</li>
+                <li class="dropdown-item" onclick="dropdown(this.innerHTML);">Сортировать по заголовку страницы</li>
+              </ul>
+              <button class="header__btn">Выполнить</button>
+            </div>
+          </div>
+          <div class="ozon__row ozon__row-with-img">
+            <div class="ozon__item-with-img current"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-with-img"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+          </div>
+        </div>
+        <div class="content seo-meta">
+          <div class="row seo-meta__header">
+            <div class="col seo-meta__header__item small">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">ID статьи</button>
+            </div>
+            <div class="col-2 seo-meta__header__item">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">Заголовок статьи</button>
+            </div>
+            <div class="col-1 seo-meta__header__item">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">Миниатюра</button>
+            </div>
+            <div class="col seo-meta__header__item my-col-200">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">Теги</button>
+            </div>
+            <div class="col seo-meta__header__item">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">Основной сайт</button>
+            </div>
+            <div class="my-col-400 seo-meta__header__item">
+              <button class="dropdown-toggle content__header__title" id="dropdownMenuLink">Вторичный сайт</button>
+            </div>
+          </div>
+          <div class="row seo-meta__body">
+            <div class="col seo-meta__body__item nonbg small"> 
+              <label class="checkbox-label" for="">
+                <input class="mycheckbox" type="checkbox" checked><span class="checkbox-custom"></span>
+              </label>
+              <div class="seo-meta__body__subitem">1</div>
+            </div>
+            <div class="col-2 seo-meta__body__item">
+              <p class="seo-meta__body__item__p blue px-2">Снять отель на двоих в Снять отель на двоих в Москве</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg"><img src="images/table.png" alt=""></div>
+            <div class="col seo-meta__body__item px-2 my-col-200">
+              <p class="seo-meta__body__item__p">Снять отель на двоих в Снять отель на двоих в Москве</p>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown(this.innerHTML);">Выбрать раздел</li>
+                  <li onclick="dropdown(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="seo-meta__body__item__child"> 
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.60996 0L11.4455 2.83551L5.41797 8.86302L6.63552 10.0806L12.663 4.05307L15.4985 6.88858V0H8.60996Z" fill="#00498D"></path>
+                  <path d="M13.7772 13.7772H1.72214V1.72214H7.74965L6.02751 0H1.72214C0.772382 0 0 0.772382 0 1.72214V13.7772C0 14.7269 0.772382 15.4993 1.72214 15.4993H13.7772C14.7269 15.4993 15.4993 14.7269 15.4993 13.7772V9.4718L13.7772 7.74965V13.7772Z" fill="#00498D"></path>
+                </svg>
+                <p class="seo-meta__body__item__child__p">22:00 3.06.2020</p>
+                <p class="success"> 
+                  <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)"></g>
+                    <path d="M8.18019 0C3.66239 0 0 3.66239 0 8.18019C0 12.698 3.66239 16.3604 8.18019 16.3604C12.698 16.3604 16.3604 12.698 16.3604 8.18019C16.3604 3.66239 12.698 0 8.18019 0ZM11.6901 3.83146L13.3896 5.53101L8.08133 10.8404L6.39177 12.5289L4.69222 10.8294L2.9707 9.10684L4.65927 7.41827L6.38079 9.14079L11.6901 3.83146Z" fill="#00C48C"></path>
+                    <defs>
+                      <clippath id="clip0"></clippath>
+                      <rect width="16.3604" height="16.3604" fill="white"></rect>
+                    </defs>
+                  </svg>Опубликовано
+                </p>
+              </div>
+            </div>
+            <div class="my-col-400 seo-meta__body__item nonbg">
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop1 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown1(this.innerHTML);">Выбрать раздел</li>
+                  <li onclick="dropdown1(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop2 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать подраздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown2(this.innerHTML);">Выбрать подраздел</li>
+                  <li onclick="dropdown2(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="seo-meta__body__item__child"> 
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.60996 0L11.4455 2.83551L5.41797 8.86302L6.63552 10.0806L12.663 4.05307L15.4985 6.88858V0H8.60996Z" fill="#00498D"></path>
+                  <path d="M13.7772 13.7772H1.72214V1.72214H7.74965L6.02751 0H1.72214C0.772382 0 0 0.772382 0 1.72214V13.7772C0 14.7269 0.772382 15.4993 1.72214 15.4993H13.7772C14.7269 15.4993 15.4993 14.7269 15.4993 13.7772V9.4718L13.7772 7.74965V13.7772Z" fill="#00498D"></path>
+                </svg>
+                <p class="seo-meta__body__item__child__p">22:00 3.06.2020</p>
+                <p class="error">
+                  <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0C3.7995 0 0 3.7995 0 8.5C0 13.2005 3.7995 17 8.5 17C13.2005 17 17 13.2005 17 8.5C17 3.7995 13.2005 0 8.5 0ZM12.155 12.155C12.0764 12.2338 11.983 12.2963 11.8801 12.339C11.7773 12.3816 11.6671 12.4036 11.5558 12.4036C11.4444 12.4036 11.3342 12.3816 11.2314 12.339C11.1285 12.2963 11.0351 12.2338 10.9565 12.155L8.5 9.6985L6.0435 12.155C5.88457 12.3139 5.66901 12.4032 5.44425 12.4032C5.21949 12.4032 5.00393 12.3139 4.845 12.155C4.68607 11.9961 4.59678 11.7805 4.59678 11.5558C4.59678 11.4445 4.6187 11.3343 4.66129 11.2314C4.70388 11.1286 4.76631 11.0352 4.845 10.9565L7.3015 8.5L4.845 6.0435C4.68607 5.88457 4.59678 5.66901 4.59678 5.44425C4.59678 5.21949 4.68607 5.00393 4.845 4.845C5.00393 4.68607 5.21949 4.59678 5.44425 4.59678C5.66901 4.59678 5.88457 4.68607 6.0435 4.845L8.5 7.3015L10.9565 4.845C11.0352 4.76631 11.1286 4.70388 11.2314 4.66129C11.3343 4.6187 11.4445 4.59678 11.5558 4.59678C11.667 4.59678 11.7772 4.6187 11.8801 4.66129C11.9829 4.70388 12.0763 4.76631 12.155 4.845C12.2337 4.92369 12.2961 5.01712 12.3387 5.11994C12.3813 5.22276 12.4032 5.33296 12.4032 5.44425C12.4032 5.55554 12.3813 5.66574 12.3387 5.76856C12.2961 5.87138 12.2337 5.96481 12.155 6.0435L9.6985 8.5L12.155 10.9565C12.478 11.2795 12.478 11.8235 12.155 12.155Z" fill="#E75E5E"></path>
+                  </svg>Ошибка
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body">
+            <div class="col seo-meta__body__item nonbg small"> 
+              <label class="checkbox-label" for="">
+                <input class="mycheckbox" type="checkbox" checked><span class="checkbox-custom"></span>
+              </label>
+              <div class="seo-meta__body__subitem">1</div>
+            </div>
+            <div class="col-2 seo-meta__body__item">
+              <p class="seo-meta__body__item__p blue px-2">Снять отель на двоих в Снять отель на двоих в Москве</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg"><img src="images/table.png" alt=""></div>
+            <div class="col seo-meta__body__item px-2 my-col-200">
+              <p class="seo-meta__body__item__p">Снять отель на двоих в Снять отель на двоих в Москве</p>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop3 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown3(this.innerHTML);">Выбрать раздел</li>
+                  <li onclick="dropdown3(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="seo-meta__body__item__child"> 
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.60996 0L11.4455 2.83551L5.41797 8.86302L6.63552 10.0806L12.663 4.05307L15.4985 6.88858V0H8.60996Z" fill="#00498D"></path>
+                  <path d="M13.7772 13.7772H1.72214V1.72214H7.74965L6.02751 0H1.72214C0.772382 0 0 0.772382 0 1.72214V13.7772C0 14.7269 0.772382 15.4993 1.72214 15.4993H13.7772C14.7269 15.4993 15.4993 14.7269 15.4993 13.7772V9.4718L13.7772 7.74965V13.7772Z" fill="#00498D"></path>
+                </svg>
+                <p class="seo-meta__body__item__child__p">22:00 3.06.2020</p>
+                <p class="warning"> 
+                  <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C10.7543 17 12.9163 16.1045 14.5104 14.5104C16.1045 12.9163 17 10.7543 17 8.5C17 6.24566 16.1045 4.08365 14.5104 2.48959C12.9163 0.895533 10.7543 0 8.5 0C6.24566 0 4.08365 0.895533 2.48959 2.48959C0.895533 4.08365 0 6.24566 0 8.5C0 10.7543 0.895533 12.9163 2.48959 14.5104C4.08365 16.1045 6.24566 17 8.5 17ZM9.5625 4.25C9.5625 3.96821 9.45056 3.69796 9.2513 3.4987C9.05204 3.29944 8.78179 3.1875 8.5 3.1875C8.21821 3.1875 7.94796 3.29944 7.7487 3.4987C7.54944 3.69796 7.4375 3.96821 7.4375 4.25V8.5C7.43756 8.78177 7.54954 9.05198 7.74881 9.25119L10.7536 12.257C10.8523 12.3557 10.9695 12.434 11.0985 12.4874C11.2274 12.5409 11.3657 12.5684 11.5053 12.5684C11.6449 12.5684 11.7831 12.5409 11.9121 12.4874C12.0411 12.434 12.1583 12.3557 12.257 12.257C12.3557 12.1583 12.434 12.0411 12.4874 11.9121C12.5409 11.7831 12.5684 11.6449 12.5684 11.5053C12.5684 11.3657 12.5409 11.2274 12.4874 11.0985C12.434 10.9695 12.3557 10.8523 12.257 10.7536L9.5625 8.06013V4.25Z" fill="#FFAD4D"></path>
+                  </svg>В очереди
+                </p>
+              </div>
+            </div>
+            <div class="my-col-400 seo-meta__body__item nonbg">
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop4 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать раздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown4(this.innerHTML);">Выбрать раздел</li>
+                  <li onclick="dropdown4(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="dropdown row__dropdown">
+                <button class="dropdown-toggle yourdrop5 seo-meta__body__item__dropbtn" type="button" data-toggle="dropdown" value="Fast">Выбрать подраздел<span class="caret"></span></button>
+                <ul class="dropdown-menu" value="Fast">
+                  <li onclick="dropdown5(this.innerHTML);">Выбрать подраздел</li>
+                  <li onclick="dropdown5(this.innerHTML);">Accurate</li>
+                </ul>
+              </div>
+              <div class="seo-meta__body__item__child"> 
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.60996 0L11.4455 2.83551L5.41797 8.86302L6.63552 10.0806L12.663 4.05307L15.4985 6.88858V0H8.60996Z" fill="#00498D"></path>
+                  <path d="M13.7772 13.7772H1.72214V1.72214H7.74965L6.02751 0H1.72214C0.772382 0 0 0.772382 0 1.72214V13.7772C0 14.7269 0.772382 15.4993 1.72214 15.4993H13.7772C14.7269 15.4993 15.4993 14.7269 15.4993 13.7772V9.4718L13.7772 7.74965V13.7772Z" fill="#00498D"></path>
+                </svg>
+                <p class="seo-meta__body__item__child__p">22:00 3.06.2020</p>
+                <p class="error"> 
+                  <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0C3.7995 0 0 3.7995 0 8.5C0 13.2005 3.7995 17 8.5 17C13.2005 17 17 13.2005 17 8.5C17 3.7995 13.2005 0 8.5 0ZM12.155 12.155C12.0764 12.2338 11.983 12.2963 11.8801 12.339C11.7773 12.3816 11.6671 12.4036 11.5558 12.4036C11.4444 12.4036 11.3342 12.3816 11.2314 12.339C11.1285 12.2963 11.0351 12.2338 10.9565 12.155L8.5 9.6985L6.0435 12.155C5.88457 12.3139 5.66901 12.4032 5.44425 12.4032C5.21949 12.4032 5.00393 12.3139 4.845 12.155C4.68607 11.9961 4.59678 11.7805 4.59678 11.5558C4.59678 11.4445 4.6187 11.3343 4.66129 11.2314C4.70388 11.1286 4.76631 11.0352 4.845 10.9565L7.3015 8.5L4.845 6.0435C4.68607 5.88457 4.59678 5.66901 4.59678 5.44425C4.59678 5.21949 4.68607 5.00393 4.845 4.845C5.00393 4.68607 5.21949 4.59678 5.44425 4.59678C5.66901 4.59678 5.88457 4.68607 6.0435 4.845L8.5 7.3015L10.9565 4.845C11.0352 4.76631 11.1286 4.70388 11.2314 4.66129C11.3343 4.6187 11.4445 4.59678 11.5558 4.59678C11.667 4.59678 11.7772 4.6187 11.8801 4.66129C11.9829 4.70388 12.0763 4.76631 12.155 4.845C12.2337 4.92369 12.2961 5.01712 12.3387 5.11994C12.3813 5.22276 12.4032 5.33296 12.4032 5.44425C12.4032 5.55554 12.3813 5.66574 12.3387 5.76856C12.2961 5.87138 12.2337 5.96481 12.155 6.0435L9.6985 8.5L12.155 10.9565C12.478 11.2795 12.478 11.8235 12.155 12.155Z" fill="#E75E5E"></path>
+                  </svg>Ошибка
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 sidebar-body">
+        <div class="sidebar" id="sidebar"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="scripts/index.js"></script>
+</html>
