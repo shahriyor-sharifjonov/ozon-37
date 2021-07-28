@@ -227,12 +227,13 @@ body {
 .content {
   background: none;
   width: 100%;
-  height: calc(100vh - 86px);
+  height: calc(100vh - 150px);
   border-radius: 6px;
   padding-top: 10px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding-right: 15px;
+  margin-bottom: 15px;
 }
 .content__header__title {
   font-weight: 600;
