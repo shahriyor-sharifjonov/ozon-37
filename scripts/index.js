@@ -11,10 +11,22 @@ $(function() {
     $(this).toggleClass('current')
   })
 })
+
+
+
+$(function() {
+  $('.pagination__text').click(function() {
+    $('.pagination__text').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+
 function dropdown500(val){
   var y = document.getElementsByClassName('dropdown500');
   var aNode = y[0].innerHTML=val;
 }
+
 
 
 function dropdownhed(val){
