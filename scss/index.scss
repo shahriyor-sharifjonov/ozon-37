@@ -869,6 +869,7 @@ body{
         padding-left: 5px;
         padding-right: 5px;
         min-width: 126px;
+        border-radius: 6px;
       }
 
 
@@ -1701,4 +1702,12 @@ td.undifined{
 
 .yourdrop{
 
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-space-between{
+  justify-content: space-between;
 }

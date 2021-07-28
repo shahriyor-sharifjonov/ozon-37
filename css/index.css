@@ -964,6 +964,7 @@ body {
   padding-left: 5px;
   padding-right: 5px;
   min-width: 126px;
+  border-radius: 6px;
 }
 .seo-meta__body__item__child {
   display: -webkit-box;
@@ -1909,4 +1910,16 @@ td.undifined {
 }
 .warning svg {
   margin-right: 5px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
