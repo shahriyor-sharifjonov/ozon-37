@@ -1320,75 +1320,150 @@ td.undifined{
   background: #fff;
   border-radius: 6px;
   padding: 15px 15px 15px 21px;
-  max-height: calc(100% - 60px);
+  height: 100%;
   width: 100%;
   margin-bottom: 11px;
 
-  &__btns{
+  &-footer{
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    align-items: center;
 
-    button{
+    &__btn{
 
-      &:first-child{
-        margin-right: 8px;
+      &:last-child{
+        max-width: 270px;
+        width: 100%;
+        margin-left: 11px;
       }
     }
   }
 
-  &-body{
-    max-height: 100%;
-  }
-
   &__chartbar{
+    padding-top: 50px;
+    border-top: 1px solid #BEBEBE;
     margin: 50px -15px 0 -20px;
-    padding: 0px 20px 0 20px;
+    padding: 50px 20px 0 20px;
   }
 
   &__items{
     height: 339px;
     overflow-y: scroll;
+    overflow-x: hidden;
     padding-right: 15px;
   }
 
   &__item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 45px;
-    background: #F4F8FA;
+    background: #F5F9FB;
     border-radius: 6px;
-    padding: 0 12px;
-    margin: 4px 0;
+    padding: 16px 20px 20px 20px;
+    margin-top: 8px;
 
-    &:first-child{
-      margin: 0 0 4px 0;
-    }
-
-    &:last-child{
-      margin: 4px 0 0 0;
-    }
-
-    &__svg{
-      margin: 0 10px;
-    }
-
-    &__p{
-      margin-bottom: 0;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 108.3%;
-      color: #424242;
-    }
-
-    &__content{
+    &-cat{
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 6px;
+  
+      &__p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #494A4A;
+        margin-bottom: 0;
+      }
+
+      &__checkbox{
+        margin: 0;
+        margin-right: 6px;
+      }
+    }
+
+    &-title{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 0;
+      color: #494A4A;
+    }
+
+    &-body{
+      margin-top: 6px;
+    }
+
+    &-p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 12px;
+      padding-bottom: 6px;
+      color: #8B8B8B;
+    }
+    
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      &__row{
+        display: flex;
+
+        &__img{
+          max-height: 19px;
+        }
+      }
+    }
+
+    &-btns{
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
 
-    &__val{
-      margin: 0;
+    &-btn{
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: 200ms ease;
+
+      svg{
+        fill: #fff;
+        transition: 200ms ease;
+      }
+
+      &_blue{
+        background: #00498D;
+        border: 2px solid #00498D;
+
+        &:hover{
+          background: #fff;
+
+          svg{
+            fill: #00498D;
+            transform: rotate(-180deg);
+          }
+        }
+      }
+
+      &_green{
+        background: #00C48C;
+        border: 2px solid #00C48C;
+        margin-left: 6px;
+
+        &:hover{
+          background: #fff;
+
+          svg{
+            fill: #00C48C;
+          }
+        }
+      }
     }
   }
 
@@ -1438,6 +1513,60 @@ td.undifined{
     &.medium{
       height: 45%;
     }
+  }
+}
+
+.edit-btn{
+  background: #FFFFFF;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1A051D;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 10px;
+  transition: 200ms ease;
+
+  &:hover{
+    background: #00498D;
+
+    .edit-btn__i{
+      background: #fff;
+
+      svg{
+        fill: #00498D;
+      }
+    }
+
+    p{
+      color: #fff;
+    }
+  }
+
+  &__i{
+    background: #00498D;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    border-radius: 6px;
+    transition: 200ms ease;
+
+    svg{
+      fill: #fff;
+      transition: 200ms ease; 
+    }
+  }
+
+  p{
+    margin-bottom: 0;
   }
 }
 
