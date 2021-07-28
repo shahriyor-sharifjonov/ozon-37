@@ -1574,6 +1574,7 @@ td.undifined {
 }
 .sidebar__item-header__row__img {
   max-height: 19px;
+  margin-right: 15px;
 }
 .sidebar__item-btns {
   display: -webkit-box;
